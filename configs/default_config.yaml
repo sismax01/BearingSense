@@ -1,0 +1,42 @@
+# =============================================================================
+# BearingSense Default Configuration — SISMAX (sismax01)
+# Used for signal processing, feature extraction, and leak-free evaluation.
+# =============================================================================
+
+bearing:
+  designation: "SKF 6205-2RS JEM (Drive End)"
+  num_balls: 9
+  ball_diameter_in: 0.3126
+  pitch_diameter_in: 1.5370
+  contact_angle_deg: 0.0
+  # Characteristic fault frequency multipliers (relative to shaft speed fr in Hz)
+  multipliers:
+    BPFO: 3.5848
+    BPFI: 5.4152
+    BSF: 2.3568
+    FTF: 0.3983
+
+signal_processing:
+  sampling_rate_hz: 12000.0
+  window_size_samples: 2048
+  window_step_samples: 1024
+  bandpass_low_hz: 2000.0
+  bandpass_high_hz: 5000.0
+  filter_order: 4
+  harmonic_tolerance_hz: 4.5
+  num_harmonics: 3
+
+simulation:
+  default_seed: 42
+  runs_per_class: 4
+  loads_hp: [0, 1, 2, 3]
+  rpms: [1797.0, 1772.0, 1750.0, 1730.0]
+  duration_sec_per_run: 2.5
+  snr_db: 2.0
+  natural_resonance_hz: 3200.0
+  damping_ratio: 0.05
+
+evaluation:
+  cv_folds: 4
+  random_seed: 42
+  compare_leaky_split: true

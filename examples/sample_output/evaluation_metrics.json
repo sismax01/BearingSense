@@ -1,0 +1,724 @@
+{
+  "author_signature": "SISMAX (sismax01)",
+  "data_notice": "SYNTHETIC_SIMULATION_DATA \u2014 For software verification only.",
+  "cv_results": {
+    "models": {
+      "Physics Rule Baseline": {
+        "accuracy": 0.9709821428571429,
+        "balanced_accuracy": 0.9709821428571429,
+        "macro_precision": 0.9714247769754369,
+        "macro_recall": 0.9709821428571429,
+        "macro_f1": 0.9707856085398161,
+        "weighted_f1": 0.9707856085398161,
+        "brier_score": 0.07353033105008747,
+        "classes": [
+          "Normal",
+          "Outer_Race_Fault",
+          "Inner_Race_Fault",
+          "Ball_Fault"
+        ],
+        "confusion_matrix": [
+          [
+            103,
+            4,
+            3,
+            2
+          ],
+          [
+            0,
+            112,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            110,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            110
+          ]
+        ],
+        "per_class": {
+          "Normal": {
+            "precision": 0.9809523809523809,
+            "recall": 0.9196428571428571,
+            "specificity": 0.9940476190476191,
+            "f1_score": 0.9493087557603686,
+            "support": 112.0
+          },
+          "Outer_Race_Fault": {
+            "precision": 0.9491525423728814,
+            "recall": 1.0,
+            "specificity": 0.9821428571428571,
+            "f1_score": 0.9739130434782608,
+            "support": 112.0
+          },
+          "Inner_Race_Fault": {
+            "precision": 0.9734513274336283,
+            "recall": 0.9821428571428571,
+            "specificity": 0.9910714285714286,
+            "f1_score": 0.9777777777777777,
+            "support": 112.0
+          },
+          "Ball_Fault": {
+            "precision": 0.9821428571428571,
+            "recall": 0.9821428571428571,
+            "specificity": 0.9940476190476191,
+            "f1_score": 0.9821428571428571,
+            "support": 112.0
+          }
+        },
+        "total_samples": 448,
+        "fold_macro_f1_mean": 0.9708921692345913,
+        "fold_macro_f1_std": 0.013156464954302399
+      },
+      "Logistic Regression (L2)": {
+        "accuracy": 0.9754464285714286,
+        "balanced_accuracy": 0.9754464285714286,
+        "macro_precision": 0.9766734279918865,
+        "macro_recall": 0.9754464285714286,
+        "macro_f1": 0.975127479389896,
+        "weighted_f1": 0.9751274793898961,
+        "brier_score": 0.04971676776666394,
+        "classes": [
+          "Normal",
+          "Outer_Race_Fault",
+          "Inner_Race_Fault",
+          "Ball_Fault"
+        ],
+        "confusion_matrix": [
+          [
+            112,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            101,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            112,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            112
+          ]
+        ],
+        "per_class": {
+          "Normal": {
+            "precision": 0.9655172413793104,
+            "recall": 1.0,
+            "specificity": 0.9880952380952381,
+            "f1_score": 0.9824561403508771,
+            "support": 112.0
+          },
+          "Outer_Race_Fault": {
+            "precision": 1.0,
+            "recall": 0.9017857142857143,
+            "specificity": 1.0,
+            "f1_score": 0.948356807511737,
+            "support": 112.0
+          },
+          "Inner_Race_Fault": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "specificity": 1.0,
+            "f1_score": 1.0,
+            "support": 112.0
+          },
+          "Ball_Fault": {
+            "precision": 0.9411764705882353,
+            "recall": 1.0,
+            "specificity": 0.9791666666666666,
+            "f1_score": 0.9696969696969697,
+            "support": 112.0
+          }
+        },
+        "total_samples": 448,
+        "fold_macro_f1_mean": 0.9736111111111111,
+        "fold_macro_f1_std": 0.0457068963108454
+      },
+      "Gaussian Discriminant": {
+        "accuracy": 0.8816964285714286,
+        "balanced_accuracy": 0.8816964285714286,
+        "macro_precision": 0.889220036990173,
+        "macro_recall": 0.8816964285714286,
+        "macro_f1": 0.8789757228878687,
+        "weighted_f1": 0.8789757228878686,
+        "brier_score": 0.21162080762610622,
+        "classes": [
+          "Normal",
+          "Outer_Race_Fault",
+          "Inner_Race_Fault",
+          "Ball_Fault"
+        ],
+        "confusion_matrix": [
+          [
+            109,
+            1,
+            0,
+            2
+          ],
+          [
+            7,
+            79,
+            6,
+            20
+          ],
+          [
+            0,
+            1,
+            110,
+            1
+          ],
+          [
+            13,
+            1,
+            1,
+            97
+          ]
+        ],
+        "per_class": {
+          "Normal": {
+            "precision": 0.8449612403100775,
+            "recall": 0.9732142857142857,
+            "specificity": 0.9404761904761905,
+            "f1_score": 0.9045643153526971,
+            "support": 112.0
+          },
+          "Outer_Race_Fault": {
+            "precision": 0.9634146341463414,
+            "recall": 0.7053571428571429,
+            "specificity": 0.9910714285714286,
+            "f1_score": 0.8144329896907218,
+            "support": 112.0
+          },
+          "Inner_Race_Fault": {
+            "precision": 0.9401709401709402,
+            "recall": 0.9821428571428571,
+            "specificity": 0.9791666666666666,
+            "f1_score": 0.9606986899563319,
+            "support": 112.0
+          },
+          "Ball_Fault": {
+            "precision": 0.8083333333333333,
+            "recall": 0.8660714285714286,
+            "specificity": 0.9315476190476191,
+            "f1_score": 0.8362068965517241,
+            "support": 112.0
+          }
+        },
+        "total_samples": 448,
+        "fold_macro_f1_mean": 0.8596281954805637,
+        "fold_macro_f1_std": 0.12284573178614001
+      },
+      "Random Forest": {
+        "accuracy": 0.9754464285714286,
+        "balanced_accuracy": 0.9754464285714286,
+        "macro_precision": 0.9771264535946755,
+        "macro_recall": 0.9754464285714286,
+        "macro_f1": 0.9754040707909386,
+        "weighted_f1": 0.9754040707909386,
+        "brier_score": 0.08212346701060806,
+        "classes": [
+          "Normal",
+          "Outer_Race_Fault",
+          "Inner_Race_Fault",
+          "Ball_Fault"
+        ],
+        "confusion_matrix": [
+          [
+            112,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            102,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            112,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            111
+          ]
+        ],
+        "per_class": {
+          "Normal": {
+            "precision": 0.9911504424778761,
+            "recall": 1.0,
+            "specificity": 0.9970238095238095,
+            "f1_score": 0.9955555555555555,
+            "support": 112.0
+          },
+          "Outer_Race_Fault": {
+            "precision": 1.0,
+            "recall": 0.9107142857142857,
+            "specificity": 1.0,
+            "f1_score": 0.9532710280373832,
+            "support": 112.0
+          },
+          "Inner_Race_Fault": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "specificity": 1.0,
+            "f1_score": 1.0,
+            "support": 112.0
+          },
+          "Ball_Fault": {
+            "precision": 0.9173553719008265,
+            "recall": 0.9910714285714286,
+            "specificity": 0.9702380952380952,
+            "f1_score": 0.9527896995708155,
+            "support": 112.0
+          }
+        },
+        "total_samples": 448,
+        "fold_macro_f1_mean": 0.97471049164413,
+        "fold_macro_f1_std": 0.0388177847306811
+      }
+    },
+    "leakage_comparison": {
+      "Time/Freq Features (Leak-Free Run-Grouped Split)": {
+        "accuracy": 0.4486607142857143,
+        "macro_f1": 0.4506998153202262,
+        "balanced_accuracy": 0.4486607142857143
+      },
+      "Time/Freq Features (Naive Random Window Split \u2014 LEAKY)": {
+        "accuracy": 0.8191964285714286,
+        "macro_f1": 0.8204373930131651,
+        "balanced_accuracy": 0.8191964285714286
+      },
+      "Full Envelope+Time Features (Leak-Free Run-Grouped Split)": {
+        "accuracy": 0.9732142857142857,
+        "macro_f1": 0.9731575779463104,
+        "balanced_accuracy": 0.9732142857142858
+      },
+      "Full Envelope+Time Features (Naive Random Window Split \u2014 LEAKY)": {
+        "accuracy": 0.9977678571428571,
+        "macro_f1": 0.997767812655705,
+        "balanced_accuracy": 0.9977678571428572
+      }
+    },
+    "n_splits": 4,
+    "n_windows": 448,
+    "n_runs": 16,
+    "source_types": [
+      "synthetic_simulation"
+    ]
+  },
+  "permutation_importance": [
+    {
+      "feature": "env_bpfo_energy_ratio",
+      "description": "Envelope Energy Ratio at Outer Race Fault Frequency (BPFO: 1x, 2x, 3x harmonics)",
+      "importance_mean": 0.1404340224662401,
+      "importance_std": 0.0043459895031007535,
+      "permutation_brier_increase": 0.129673313391959,
+      "gini_importance": 0.16041819646133354,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "env_bpfi_energy_ratio",
+      "description": "Envelope Energy Ratio at Inner Race Fault Frequency (BPFI: 1x, 2x, 3x harmonics)",
+      "importance_mean": 0.11329861474907396,
+      "importance_std": 0.004174698068051559,
+      "permutation_brier_increase": 0.10724069632697424,
+      "gini_importance": 0.1245490346758306,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "env_bsf_energy_ratio",
+      "description": "Envelope Energy Ratio at Ball Spin / Defect Frequency (BSF & 2xBSF harmonics)",
+      "importance_mean": 0.10961463312238381,
+      "importance_std": 0.005019928401236168,
+      "permutation_brier_increase": 0.0943587185207797,
+      "gini_importance": 0.1379470459539343,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "env_dominant_freq_hz",
+      "description": "Dominant peak frequency (Hz) in the low-frequency demodulated envelope spectrum",
+      "importance_mean": 0.08570926162000772,
+      "importance_std": 0.002557672805668289,
+      "permutation_brier_increase": 0.06619907438266982,
+      "gini_importance": 0.12194246648934956,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "fd_high_freq_energy_ratio",
+      "description": "High-Frequency Resonance Ratio (2\u20135 kHz power / total power)",
+      "importance_mean": 0.052749890189800266,
+      "importance_std": 0.0022319901752334385,
+      "permutation_brier_increase": 0.034835182347361694,
+      "gini_importance": 0.08602006189718618,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "td_rms",
+      "description": "Root Mean Square (RMS) vibration amplitude \u2014 overall vibration energy level",
+      "importance_mean": 0.03566228141145402,
+      "importance_std": 0.0008407286378859736,
+      "permutation_brier_increase": 0.02129130401106839,
+      "gini_importance": 0.06235123944074161,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "env_ftf_sideband_ratio",
+      "description": "Envelope Energy Ratio at Cage Train / Sideband Frequencies (FTF & BPFI\u00b1fr)",
+      "importance_mean": 0.03200103571266505,
+      "importance_std": 0.001972039424739317,
+      "permutation_brier_increase": 0.021551129664137723,
+      "gini_importance": 0.051408004088501526,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "fd_spectral_centroid_hz",
+      "description": "Spectral Centroid (Hz) \u2014 center of gravity of the raw FFT power spectrum",
+      "importance_mean": 0.02710805337404778,
+      "importance_std": 0.00021722232150695223,
+      "permutation_brier_increase": 0.006075866974364417,
+      "gini_importance": 0.06616782811631688,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "fd_spectral_spread_hz",
+      "description": "Spectral Spread (Hz) \u2014 bandwidth dispersion around the spectral centroid",
+      "importance_mean": 0.020361515724718594,
+      "importance_std": 0.0012439015547180215,
+      "permutation_brier_increase": 0.008280597146201354,
+      "gini_importance": 0.04279750737053633,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "fd_spectral_entropy",
+      "description": "Normalized Shannon Spectral Entropy \u2014 flatness vs. tonal concentration of spectrum",
+      "importance_mean": 0.020262277801836252,
+      "importance_std": 0.00047658154447476514,
+      "permutation_brier_increase": 0.005742586161357799,
+      "gini_importance": 0.047227419419867675,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "env_kurtosis",
+      "description": "Kurtosis of the demodulated Hilbert envelope signal \u2014 cyclostationary impulsiveness",
+      "importance_mean": 0.013970758768833351,
+      "importance_std": 0.0008585174351044008,
+      "permutation_brier_increase": 0.007940103795146697,
+      "gini_importance": 0.025170546577108568,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "td_shape_factor",
+      "description": "Shape Factor (RMS / Mean Absolute Value) \u2014 waveform distribution shape",
+      "importance_mean": 0.013586841761977539,
+      "importance_std": 0.00047100361110971844,
+      "permutation_brier_increase": 0.006277239047848405,
+      "gini_importance": 0.027161818231074504,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "td_kurtosis",
+      "description": "Excess fourth standardized moment (Kurtosis) \u2014 sensitivity to impulsive bearing impacts",
+      "importance_mean": 0.009025286632387011,
+      "importance_std": 0.0008980394305678195,
+      "permutation_brier_increase": 0.007609675944506205,
+      "gini_importance": 0.01165427790987994,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "td_peak",
+      "description": "Peak absolute vibration amplitude \u2014 maximum instantaneous shock level",
+      "importance_mean": 0.005761053090467784,
+      "importance_std": 0.0003786294569284071,
+      "permutation_brier_increase": 0.0017615856626654299,
+      "gini_importance": 0.013188635456386443,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "td_impulse_factor",
+      "description": "Impulse Factor (Peak / Mean Absolute Value) \u2014 indicator of sharp localized strikes",
+      "importance_mean": 0.003349647370852995,
+      "importance_std": 0.0004364707775912598,
+      "permutation_brier_increase": 0.0013480085958051929,
+      "gini_importance": 0.0070669765245131985,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "td_crest_factor",
+      "description": "Crest Factor (Peak / RMS) \u2014 ratio of peak impact to average vibration energy",
+      "importance_mean": 0.0032376925363561495,
+      "importance_std": 0.0003592580173732255,
+      "permutation_brier_increase": 0.0009031246380195741,
+      "gini_importance": 0.007573318633266933,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "td_clearance_factor",
+      "description": "Clearance Factor (Peak / Root-Mean-Square-Root^2) \u2014 sensitive to early spalling",
+      "importance_mean": 0.002567511799885671,
+      "importance_std": 0.00014060835159569876,
+      "permutation_brier_increase": 0.0008667953713166202,
+      "gini_importance": 0.005725985167228194,
+      "evaluation_mode": "out_of_fold_group_cv"
+    },
+    {
+      "feature": "td_skewness",
+      "description": "Third standardized moment (Skewness) \u2014 asymmetry of the vibration waveform",
+      "importance_mean": 0.0006026332858164723,
+      "importance_std": 5.5074573337990414e-05,
+      "permutation_brier_increase": 4.9630969824711727e-05,
+      "gini_importance": 0.0016296375869440276,
+      "evaluation_mode": "out_of_fold_group_cv"
+    }
+  ],
+  "sample_explanation": {
+    "predicted_class": "Outer_Race_Fault",
+    "confidence": 0.9957714166421964,
+    "class_probabilities": {
+      "Normal": 0.0009214537684486442,
+      "Outer_Race_Fault": 0.9957714166421964,
+      "Inner_Race_Fault": 0.0009214537684486442,
+      "Ball_Fault": 0.002385675820905992
+    },
+    "fault_frequencies_hz": {
+      "fr": 29.95,
+      "BPFO": 107.36402732595965,
+      "BPFI": 162.18597267404033,
+      "BSF": 70.58381493640968,
+      "BDF": 141.16762987281936,
+      "FTF": 11.929336369551073
+    },
+    "top_feature_attributions": [
+      {
+        "feature": "env_bpfo_energy_ratio",
+        "description": "Envelope Energy Ratio at Outer Race Fault Frequency (BPFO: 1x, 2x, 3x harmonics)",
+        "observed_value": 0.4548240179382012,
+        "healthy_baseline_mean": 0.034783214771012524,
+        "z_score_vs_healthy": 24.444027175980242,
+        "probability_contribution": 0.5399827992992394
+      },
+      {
+        "feature": "env_dominant_freq_hz",
+        "description": "Dominant peak frequency (Hz) in the low-frequency demodulated envelope spectrum",
+        "observed_value": 105.46875,
+        "healthy_baseline_mean": 320.90541294642856,
+        "z_score_vs_healthy": -1.0682704235851748,
+        "probability_contribution": 0.21717438405906497
+      },
+      {
+        "feature": "fd_high_freq_energy_ratio",
+        "description": "High-Frequency Resonance Ratio (2\u20135 kHz power / total power)",
+        "observed_value": 0.6372995694093716,
+        "healthy_baseline_mean": 0.28726627438677005,
+        "z_score_vs_healthy": 20.63795332948235,
+        "probability_contribution": 0.19710421050260762
+      },
+      {
+        "feature": "td_rms",
+        "description": "Root Mean Square (RMS) vibration amplitude \u2014 overall vibration energy level",
+        "observed_value": 0.1865806086457678,
+        "healthy_baseline_mean": 0.11847646022022619,
+        "z_score_vs_healthy": 43.052110845903705,
+        "probability_contribution": 0.12611731883604915
+      },
+      {
+        "feature": "env_bsf_energy_ratio",
+        "description": "Envelope Energy Ratio at Ball Spin / Defect Frequency (BSF & 2xBSF harmonics)",
+        "observed_value": 0.1271185920183174,
+        "healthy_baseline_mean": 0.04459269714998224,
+        "z_score_vs_healthy": 3.9787136998061174,
+        "probability_contribution": 0.12505736413541968
+      },
+      {
+        "feature": "fd_spectral_centroid_hz",
+        "description": "Spectral Centroid (Hz) \u2014 center of gravity of the raw FFT power spectrum",
+        "observed_value": 2548.9921654355676,
+        "healthy_baseline_mean": 1744.70671401169,
+        "z_score_vs_healthy": 11.504644355916504,
+        "probability_contribution": 0.10261101831188424
+      }
+    ],
+    "all_feature_attributions": [
+      {
+        "feature": "env_bpfo_energy_ratio",
+        "description": "Envelope Energy Ratio at Outer Race Fault Frequency (BPFO: 1x, 2x, 3x harmonics)",
+        "observed_value": 0.4548240179382012,
+        "healthy_baseline_mean": 0.034783214771012524,
+        "z_score_vs_healthy": 24.444027175980242,
+        "probability_contribution": 0.5399827992992394
+      },
+      {
+        "feature": "env_dominant_freq_hz",
+        "description": "Dominant peak frequency (Hz) in the low-frequency demodulated envelope spectrum",
+        "observed_value": 105.46875,
+        "healthy_baseline_mean": 320.90541294642856,
+        "z_score_vs_healthy": -1.0682704235851748,
+        "probability_contribution": 0.21717438405906497
+      },
+      {
+        "feature": "fd_high_freq_energy_ratio",
+        "description": "High-Frequency Resonance Ratio (2\u20135 kHz power / total power)",
+        "observed_value": 0.6372995694093716,
+        "healthy_baseline_mean": 0.28726627438677005,
+        "z_score_vs_healthy": 20.63795332948235,
+        "probability_contribution": 0.19710421050260762
+      },
+      {
+        "feature": "td_rms",
+        "description": "Root Mean Square (RMS) vibration amplitude \u2014 overall vibration energy level",
+        "observed_value": 0.1865806086457678,
+        "healthy_baseline_mean": 0.11847646022022619,
+        "z_score_vs_healthy": 43.052110845903705,
+        "probability_contribution": 0.12611731883604915
+      },
+      {
+        "feature": "env_bsf_energy_ratio",
+        "description": "Envelope Energy Ratio at Ball Spin / Defect Frequency (BSF & 2xBSF harmonics)",
+        "observed_value": 0.1271185920183174,
+        "healthy_baseline_mean": 0.04459269714998224,
+        "z_score_vs_healthy": 3.9787136998061174,
+        "probability_contribution": 0.12505736413541968
+      },
+      {
+        "feature": "fd_spectral_centroid_hz",
+        "description": "Spectral Centroid (Hz) \u2014 center of gravity of the raw FFT power spectrum",
+        "observed_value": 2548.9921654355676,
+        "healthy_baseline_mean": 1744.70671401169,
+        "z_score_vs_healthy": 11.504644355916504,
+        "probability_contribution": 0.10261101831188424
+      },
+      {
+        "feature": "fd_spectral_spread_hz",
+        "description": "Spectral Spread (Hz) \u2014 bandwidth dispersion around the spectral centroid",
+        "observed_value": 1564.412753624562,
+        "healthy_baseline_mean": 1970.089988874464,
+        "z_score_vs_healthy": -14.01616533135461,
+        "probability_contribution": 0.06704263839379032
+      },
+      {
+        "feature": "td_shape_factor",
+        "description": "Shape Factor (RMS / Mean Absolute Value) \u2014 waveform distribution shape",
+        "observed_value": 1.347544024539259,
+        "healthy_baseline_mean": 1.2445625263740485,
+        "z_score_vs_healthy": 11.240439102299215,
+        "probability_contribution": 0.05017807097204152
+      },
+      {
+        "feature": "env_ftf_sideband_ratio",
+        "description": "Envelope Energy Ratio at Cage Train / Sideband Frequencies (FTF & BPFI\u00b1fr)",
+        "observed_value": 0.03302597038263646,
+        "healthy_baseline_mean": 0.06579585477873794,
+        "z_score_vs_healthy": -1.3236150943932647,
+        "probability_contribution": 0.04591372242639402
+      },
+      {
+        "feature": "td_peak",
+        "description": "Peak absolute vibration amplitude \u2014 maximum instantaneous shock level",
+        "observed_value": 1.0926169206267506,
+        "healthy_baseline_mean": 0.43391979554667853,
+        "z_score_vs_healthy": 6.083311996901398,
+        "probability_contribution": 0.03349764642777886
+      },
+      {
+        "feature": "fd_spectral_entropy",
+        "description": "Normalized Shannon Spectral Entropy \u2014 flatness vs. tonal concentration of spectrum",
+        "observed_value": 0.8146855654217525,
+        "healthy_baseline_mean": 0.7284983121585248,
+        "z_score_vs_healthy": 6.6478900040556494,
+        "probability_contribution": 0.030169786019336176
+      },
+      {
+        "feature": "td_kurtosis",
+        "description": "Excess fourth standardized moment (Kurtosis) \u2014 sensitivity to impulsive bearing impacts",
+        "observed_value": 2.8122596877616575,
+        "healthy_baseline_mean": -0.09210312054089154,
+        "z_score_vs_healthy": 9.678141325782596,
+        "probability_contribution": 0.01792551483896232
+      },
+      {
+        "feature": "td_clearance_factor",
+        "description": "Clearance Factor (Peak / Root-Mean-Square-Root^2) \u2014 sensitive to early spalling",
+        "observed_value": 9.567274033661567,
+        "healthy_baseline_mean": 5.36321367948951,
+        "z_score_vs_healthy": 3.107207279621388,
+        "probability_contribution": 0.016569441798419682
+      },
+      {
+        "feature": "td_impulse_factor",
+        "description": "Impulse Factor (Peak / Mean Absolute Value) \u2014 indicator of sharp localized strikes",
+        "observed_value": 7.89122413731852,
+        "healthy_baseline_mean": 4.560077357685842,
+        "z_score_vs_healthy": 2.90974418016292,
+        "probability_contribution": 0.016444933072731427
+      },
+      {
+        "feature": "env_kurtosis",
+        "description": "Kurtosis of the demodulated Hilbert envelope signal \u2014 cyclostationary impulsiveness",
+        "observed_value": 6.037991942404545,
+        "healthy_baseline_mean": 0.47537289470989164,
+        "z_score_vs_healthy": 5.7153077199086,
+        "probability_contribution": 0.0
+      },
+      {
+        "feature": "td_skewness",
+        "description": "Third standardized moment (Skewness) \u2014 asymmetry of the vibration waveform",
+        "observed_value": 0.42168623098688923,
+        "healthy_baseline_mean": 0.04743369648333454,
+        "z_score_vs_healthy": 3.258922392989746,
+        "probability_contribution": 0.0
+      },
+      {
+        "feature": "td_crest_factor",
+        "description": "Crest Factor (Peak / RMS) \u2014 ratio of peak impact to average vibration energy",
+        "observed_value": 5.856004697150152,
+        "healthy_baseline_mean": 3.6616850755961754,
+        "z_score_vs_healthy": 2.4292406275633733,
+        "probability_contribution": 0.0
+      },
+      {
+        "feature": "env_bpfi_energy_ratio",
+        "description": "Envelope Energy Ratio at Inner Race Fault Frequency (BPFI: 1x, 2x, 3x harmonics)",
+        "observed_value": 0.036894239271259545,
+        "healthy_baseline_mean": 0.03695856309611679,
+        "z_score_vs_healthy": -0.0030777323629285662,
+        "probability_contribution": 0.0
+      }
+    ],
+    "physical_narrative": "Classified as Outer_Race_Fault (99.6% confidence). The Hilbert envelope spectrum exhibits strong harmonic energy concentration (45.5% of band energy) aligned with the Ball Pass Frequency Outer race (BPFO = 107.4 Hz, 2x = 214.7 Hz), with dominant envelope peak at 105.5 Hz and elevated waveform kurtosis (2.81).",
+    "recording_summary": {
+      "total_windows_evaluated": 28,
+      "overall_predicted_class": "Outer_Race_Fault",
+      "mean_class_confidence": 0.9808883121906771,
+      "window_agreement_ratio": 1.0,
+      "window_vote_counts": {
+        "Normal": 0,
+        "Outer_Race_Fault": 28,
+        "Inner_Race_Fault": 0,
+        "Ball_Fault": 0
+      },
+      "representative_window_index": 27
+    }
+  }
+}
