@@ -20,11 +20,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
-Third-Party Data Attribution Notice:
-BearingSense is designed to ingest publicly available experimental bearing vibration
-measurements from the Case Western Reserve University (CWRU) Bearing Data Center
-(https://engineering.case.edu/bearingdatacenter/welcome), Principal Investigator:
-Prof. Kenneth A. Loparo. Raw CWRU `.mat` files are not redistributed in this
-repository; users should obtain them directly from the official CWRU Bearing Data
-Center and cite the source in accordance with academic standards.
